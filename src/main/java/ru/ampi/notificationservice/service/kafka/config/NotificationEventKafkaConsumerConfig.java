@@ -1,8 +1,7 @@
-package ru.ampi.notificationservice.service.kafka.listener;
+package ru.ampi.notificationservice.service.kafka.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
-import org.common.common_utils.event.BookEvent;
 import org.common.common_utils.event.NotificationEvent;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
