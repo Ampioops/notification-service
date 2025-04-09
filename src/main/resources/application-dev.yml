@@ -1,12 +1,12 @@
 spring:
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
 
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username: zchiernov1@gmail.com
-    password: ogvjhbgnsjiktsqc
+    host: ${SPRING_MAIL_HOST:smtp.gmail.com}
+    port: ${SPRING_MAIL_PORT:587}
+    username: ${SPRING_MAIL_USERNAME}
+    password: ${SPRING_MAIL_PASSWORD}
     test-connection: true
     properties:
       mail:
